@@ -1,6 +1,3 @@
-# atividadesql
-
-
 -- Criar o banco de dados
 CREATE DATABASE AlunosSala;
 
@@ -15,6 +12,7 @@ CREATE TABLE alunos (
     idade VARCHAR(255)
 );
 
+-- Inserir dados na tabela 'alunos'
 INSERT INTO alunos (id, nome, sobrenome, idade) VALUES
     (1, 'Adrielly', 'Inocencio', '17'),
     (2, 'Alice', 'Campos', '17'),
@@ -50,3 +48,6 @@ INSERT INTO alunos (id, nome, sobrenome, idade) VALUES
     (32, 'Vinicius', 'de Souza', '17'),
     (33, 'Vitor Hugo', 'Basso', '16'),
     (34, 'Wesley', 'Batista', '17');
+
+-- Mostrar os dados inseridos
+SELECT * FROM alunos;
